@@ -85,7 +85,7 @@ class WoltModalSheetDragToDismissDetector extends StatelessWidget {
       return;
     }
 
-    final deltaDiff = details.primaryDelta! / _childHeight;
+    final deltaDiff = 2 * (details.primaryDelta! / _childHeight);
 
     switch (_dismissDirection) {
       case WoltModalDismissDirection.down:
